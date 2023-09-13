@@ -13,18 +13,13 @@ public class transformation_number {
     }
 
     public static String transformarNumeroEmPalavra(int numero) {
-        switch (numero) {
-            case 1:
-                return "One";
-            case 2:
-                return "Two";
-            case 3:
-                return "Three";
-            case 4:
-                return "Four";
-            default:
-                return "not locate";
-        }
+        return switch (numero) {
+            case 1 -> "One";
+            case 2 -> "Two";
+            case 3 -> "Three";
+            case 4 -> "Four";
+            default -> "not locate";
+        };
     }
 }
 
